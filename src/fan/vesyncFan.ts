@@ -11,9 +11,9 @@ export class VesyncFan {
 
     constructor(deviceData) {
         this.name = deviceData.deviceName;
-        this.mode = deviceData.extension.mode;
-        this.speed = deviceData.extension.fanSpeedLevel;
-        this.airQuality = deviceData.extension.airQualityLevel;
+        this.mode = deviceData.extension?.mode;
+        this.speed = deviceData.extension?.fanSpeedLevel;
+        this.airQuality = deviceData.extension?.airQualityLevel;
         this.uuid = deviceData.uuid;
         this.status = deviceData.deviceStatus;
         this.configModule=deviceData.configModule;
